@@ -4,6 +4,6 @@
 ---
 # [Website here](https://gotflamingo.github.io/)
 
-## 📜 Closing Statements
+# 📜 Closing Statements
 
 Liked the project? I know you did! Support me, **drop a star!** 🙏
