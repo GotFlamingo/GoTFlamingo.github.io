@@ -2,7 +2,7 @@
 * Under active development, many new features will be added!
 
 ---
-[GoTFlamingo.github.io](GoTFlamingo.github.io)
+[gotFlamingo.github.io](https://gotflamingo.github.io/)
 
 ---
 
